@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="">
+        <menu>
+        <item
+            android:id="@+id/shop"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Booze by category" />
+        <item
+            android:id="@+id/pedia"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Boozingo Pedia" />
+        <item
+            android:id="@+id/stories"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Hangout Stories" />
+</menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+        <item
+            android:id="@+id/visited_places"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Visited Hangouts" />
+        <item
+            android:id="@+id/wishlist"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Your Wishlist" />
+        <item
+            android:id="@+id/my_reviews"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="My Reviews" />
+        <item
+            android:id="@+id/my_content"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="My Hangout Stories" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/rate"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Rate Boozingo!" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Account Settings" />
+            <item
+                android:id="@+id/logout"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,200 @@
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/scrolling_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        tools:src="@drawable/bg2"
+
+        android:scaleX="@dimen/start_scale"
+        android:scaleY="@dimen/start_scale"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <com.vpaliy.loginconcept.AnimatedViewPager
+        android:id="@+id/pager"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/color_log_in"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline"
+        app:layout_constraintGuide_begin="48dp"
+        android:orientation="horizontal" />
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/email_input"
+        style="@style/Widget.TextInputLayout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/fname_input_edit"
+            style="@style/Widget.TextEdit"
+            android:hint="First Name" />
+    </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/otp_input"
+        style="@style/Widget.TextInputLayout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.133">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/lname_input_edit"
+            style="@style/Widget.TextEdit"
+
+            android:hint="Last Name" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/user_input"
+        style="@style/Widget.TextInputLayout"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.267">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/uname_input_edit"
+            style="@style/Widget.TextEdit"
+
+            android:hint="User Name" />
+    </android.support.design.widget.TextInputLayout>
+
+  <!--  />-->
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/password_input"
+        style="@style/Widget.TextInputLayout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/user_input"
+        app:passwordToggleTint="@color/color_input_hint">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/password_input_edit"
+            style="@style/Widget.TextEdit"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        style="@style/Widget.TextInputLayout"
+        android:id="@+id/confirm_password"
+        android:layout_marginTop="8dp"
+        app:passwordToggleTint="@color/color_input_hint"
+        app:layout_constraintTop_toBottomOf="@+id/password_input"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+        <android.support.design.widget.TextInputEditText
+            style="@style/Widget.TextEdit"
+            android:id="@+id/confirm_password_edit"
+            android:hint="@string/confirm_hint"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:id="@+id/gender"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirm_password">
+<RadioGroup
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+        <RadioButton
+            android:id="@+id/male"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALE" />
+
+    <RadioButton
+        android:id="@+id/female"
+        android:textColor="#fff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FEMALE" />
+</RadioGroup>
+    </LinearLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/mail_input"
+        style="@style/Widget.TextInputLayout"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.767">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/email_input_edit"
+            style="@style/Widget.TextEdit"
+
+            android:hint="Email ID" />
+    </android.support.design.widget.TextInputLayout>
+
+    <EditText
+        android:id="@+id/dob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="4dp"
+android:textColor="#fff"
+        android:ems="10"
+        android:hint="Date of birth"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail_input"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="REGISTER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dob"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.vpaliy.loginconcept.DetailActivity"
+    tools:showIn="@layout/activity_detail">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+<TextView
+    android:layout_width="0dp"
+    android:layout_weight="4"
+    android:layout_height="wrap_content"
+    android:text="Name"
+    android:textColor="#000"
+    android:id="@+id/name"
+    android:textStyle="bold"
+    android:textSize="35sp"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="3.2"
+            android:padding="5dp"
+            android:textColor="#000"
+
+            android:id="@+id/rating"
+            android:background="#fff000"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+
+        android:background="#d3d3d3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/type"
+        android:text="Type: "
+        android:textColor="#000"
+        android:layout_margin="5dp"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Timings: "
+        android:layout_margin="5dp"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Timings: "
+        android:layout_margin="5dp"
+
+        android:id="@+id/timings"
+        android:textColor="#000"
+
+        android:textSize="15sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="wrap_content"
+            android:text="Get Directions"
+            android:layout_margin="8dp"
+            android:id="@+id/directions"
+            android:textColor="#000fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Menu"
+            android:id="@+id/menu"
+            android:layout_margin="8dp"
+
+            android:textColor="#000fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Reviews"
+            android:id="@+id/reviews"
+            android:layout_margin="8dp"
+
+            android:textColor="#000fff"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:id="@+id/photos"
+            android:text="Photos"
+            android:textColor="#000fff"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Details"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_margin="5dp"
+
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Cost: "
+        android:layout_margin="5dp"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Cost: "
+        android:textColor="#000"
+        android:layout_margin="5dp"
+
+        android:id="@+id/cost"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Address: "
+        android:layout_margin="5dp"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Address: "
+        android:layout_margin="5dp"
+
+        android:textColor="#000"
+
+        android:id="@+id/address"
+        android:textSize="15sp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_margin="5dp"
+
+            android:layout_height="match_parent"
+            android:text="Phone no: "
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/phone_btn"
+            android:background="@drawable/ic_action_name"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/phone"
+        android:layout_height="match_parent"
+        android:text="Phone no: "
+        android:layout_margin="5dp"
+
+        android:textColor="#000"
+
+        android:textSize="15sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d3d3d3"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="More Info"
+        android:layout_margin="5dp"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Booze Served: "
+        android:textColor="#000"
+        android:layout_margin="5dp"
+
+        android:id="@+id/booze"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Sitting Facility: "
+        android:textColor="#000"
+        android:layout_margin="5dp"
+
+        android:id="@+id/sitting"
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Music: "
+        android:layout_margin="5dp"
+
+        android:id="@+id/music"
+        android:textColor="#000"
+
+        android:textSize="15sp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Payment: "
+        android:layout_margin="5dp"
+
+        android:textColor="#000"
+
+        android:id="@+id/payment"
+        android:textSize="15sp"/>
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
